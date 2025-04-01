@@ -58,16 +58,19 @@ p {
     0% {
         background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.127)), url(IMG/Planeta_decoracion.jpg);
     }
-    33% {
+    25% {
         background-image: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.621)), url(IMG/Planeta_decoracion2.webp);
-       
     }
-    66% {
+    50% {
+        background-image: linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)), url(IMG/Fondo22.png);
+    }
+    75% {
         background-image: linear-gradient(rgba(6, 6, 6, 0.55), rgba(6, 6, 6, 0.55)), url(IMG/Planeta-decoracion5.webp);
     }
     100% {
         background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.300)), url(IMG/Saturno-decoracion3.webp);
     }
+
 }
 
 /* Estilo de navegación */

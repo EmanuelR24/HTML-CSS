@@ -4,9 +4,7 @@
 
 /* Estilo de navegación */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgb(0, 0, 0)), url(IMG/lunas-saturno.webp);
     margin-bottom: 100px;
-    /* padding-top: 180px; */
 }
 
 #section-introduccion{

@@ -36,6 +36,7 @@ header nav{
     font-weight: bold;
     font-family: 'Poppins','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: hsl(0, 0%, 82%);
+    box-shadow: 10px 10px 30px black, -10px -10px 30px #212121;
     text-decoration-color: hsl(0, 0%, 82%);
     transition: border 0.7s ease;
 }
@@ -45,6 +46,7 @@ header nav{
     margin-top: 20px;
     background-color: rgb(25, 189, 25);
     color: white;
+    box-shadow: 10px 10px 30px black, -10px -10px 30px #212121;
     border: none;
     border-radius: 8px;
     font-weight: bold;
@@ -59,8 +61,10 @@ header nav{
     color: black;
 }
 
-.contacto-section input:hover, .contacto-section textarea:hover {
-    border-color: rgb(25, 189, 25);
+.contacto-section input:hover, .contacto-section textarea:hover,
+.contacto-section input:focus, .contacto-section textarea:focus {
+    border-color: rgb(0, 255, 0);
+    outline: none;
 }
 
 

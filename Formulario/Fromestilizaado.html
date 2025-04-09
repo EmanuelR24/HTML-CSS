@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo de Proveedores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-secondary text-white d-flex align-items-center justify-content-center min-vh-100">
+    <div class="container">
+        <div class="col-md-8 offset-md-2 bg-dark p-4 rounded shadow">
+            <h2 class="text-center mb-4 text-info">Registro de Proveedores</h2>
+            <form action="/submit" method="get">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre del Proveedor (min 3, max 50 caracteres):</label>
+                    <input type="text" class="form-control bg-secondary border-secondary shadow-sm" id="nombre" name="nombre" minlength="3" maxlength="50" required placeholder="Ingrese el nombre del proveedor">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control bg-secondary border-secondary" id="email" name="email" required placeholder="example@correo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono (min 10, max 15 dígitos):</label>
+                    <input type="tel" class="form-control bg-secondary border-secondary" id="telefono" name="telefono" pattern="[0-9]{10,15}" required placeholder="Ej: 1234567890">
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección:</label>
+                    <input type="text" class="form-control bg-secondary border-secondary" id="direccion" name="direccion" minlength="5" maxlength="100" required placeholder="Ingrese la dirección">
+                </div>
+                <div class="mb-3">
+                    <label for="pais" class="form-label">País:</label>
+                    <select class="form-select bg-secondary border-secondary" id="pais" name="pais" required>
+                        <option value="">Seleccione su país</option>
+                        <option value="mx">México</option>
+                        <option value="us">Estados Unidos</option>
+                        <option value="es">España</option>
+                        <option value="ar">Argentina</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Preferencia de Comunicación:</label>
+                    <div class="form-check">
+                        <input class="form-check-input bg-secondary border-secondary" type="radio" id="email_pref" name="comunicacion" value="email" required>
+                        <label class="form-check-label" for="email_pref">Email</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-secondary border-secondary" type="radio" id="telefono_pref" name="comunicacion" value="telefono" required>
+                        <label class="form-check-label" for="telefono_pref">Teléfono</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Servicios que Ofrece:</label>
+                    <div class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" id="servicio1" name="servicios" value="transporte">
+                        <label class="form-check-label" for="servicio1">Transporte</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" id="servicio2" name="servicios" value="logistica">
+                        <label class="form-check-label" for="servicio2">Logística</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-secondary" type="checkbox" id="servicio3" name="servicios" value="almacenaje">
+                        <label class="form-check-label" for="servicio3">Almacenaje</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="num_asociados" class="form-label">Número de Proveedores Asociados (1 a 50):</label>
+                    <input type="number" class="form-control bg-secondary border-secondary" id="num_asociados" name="num_asociados" min="1" max="50" required>
+                </div>
+                <div class="mb-3">
+                    <label for="documentos" class="form-label">Subir Documentos de Identificación:</label>
+                    <input type="file" class="form-control bg-secondary border-secondary" id="documentos" name="documentos" multiple required>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="condiciones" name="condiciones" required>
+                    <label class="form-check-label" for="condiciones">Acepto las condiciones de servicio</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Registrar Proveedor</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

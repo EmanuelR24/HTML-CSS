@@ -94,6 +94,7 @@ header {
     align-items: center;
     border-radius: 10px;
     padding: 20px;
+    background-color: hsl(279, 88%, 6%);
     box-shadow: 5px 5px 10px #000000b0, -5px -5px 10px #2424248e;
     transition: transform 0.3s ease;
 }

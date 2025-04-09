@@ -27,6 +27,7 @@ a{
     border-radius: 11px;
     border: 2px solid rgba(188, 188, 188, 0.342);
 }
+
 section h1{
     color:hsl(276, 77%, 61%);
 }
@@ -40,6 +41,16 @@ h1, h2, h3, h4 {
 p {
     font-size: 1.2rem;
 }
+/* Estilo de listas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    max-width: 700px;
+}
 .mini-subtitulos, h4 {
     color: hsl(276, 100%, 71%);
 }
@@ -51,6 +62,10 @@ p {
     border-radius: 14px;
     box-shadow: 5px 5px 10px #000000b0, -5px -5px 10px #2424248e;
     background-color: rgba(36, 0, 59, 0.852);
+    transition: transform 0.2s ease-in-out;
+}
+.sections li:hover{
+    transform: scale(1.02);
 }
 
 /* Carrusel de fondo */
@@ -282,17 +297,24 @@ nav {
     width: 90%;
     border-radius: 13px;
 }
-/* Estilo de listas */
-ul {
-    list-style-type: none;
-    padding-left: 0;
+/* Mensaje continuar */
+#container-continuar{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #000000b0, -5px -5px 10px #2424248e;
+    background-color: hsl(276, 55%, 50%);
+    color:rgb(18, 0, 31);
 }
-
-li {
-    margin-bottom: 15px;
-    max-width: 700px;
+.a-continuar{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.808);
+    transition: color 0.5s ease-in-out;
 }
-
+.a-continuar:hover{
+    color: rgb(18, 0, 31);
+}
 /* Estilo del pie de página */
 footer {
     display: flex;

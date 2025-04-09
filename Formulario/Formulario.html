@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo de Proveedores</title>
+</head>
+<body>
+    <h2>Formulario Completo de Registro de Proveedores</h2>
+    
+    <form action="/submit" method="get">
+        <!-- Nombre del Proveedor -->
+        <label for="nombre">Nombre del Proveedor (min 3, max 50 caracteres):</label><br>
+        <input type="text" id="nombre" name="nombre" minlength="3" maxlength="50" required placeholder="Ingrese el nombre del proveedor"><br><br>
+
+        <!-- Correo Electrónico -->
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required placeholder="example@correo.com"><br><br>
+
+        <!-- Teléfono -->
+        <label for="telefono">Teléfono (min 10, max 15 dígitos):</label><br>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10,15}" required placeholder="Ej: 1234567890"><br><br>
+
+        <!-- Dirección -->
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" id="direccion" name="direccion" minlength="5" maxlength="100" required placeholder="Ingrese la dirección"><br><br>
+
+        <!-- Selección de País -->
+        <label for="pais">País:</label><br>
+        <select id="pais" name="pais" required>
+            <option value="">Seleccione su país</option>
+            <option value="mx">México</option>
+            <option value="us">Estados Unidos</option>
+            <option value="es">España</option>
+            <option value="ar">Argentina</option>
+        </select><br><br>
+
+        <!-- Preferencia de Comunicación -->
+        <label>Preferencia de Comunicación:</label><br>
+        <input type="radio" id="email_pref" name="comunicacion" value="email" required>
+        <label for="email_pref">Email</label><br>
+        
+        <input type="radio" id="telefono_pref" name="comunicacion" value="telefono" required>
+        <label for="telefono_pref">Teléfono</label><br><br>
+
+        <!-- Servicios Ofrecidos -->
+        <label>Servicios que Ofrece:</label><br>
+        <input type="checkbox" id="servicio1" name="servicios" value="transporte">
+        <label for="servicio1">Transporte</label><br>
+        
+        <input type="checkbox" id="servicio2" name="servicios" value="logistica">
+        <label for="servicio2">Logística</label><br>
+        
+        <input type="checkbox" id="servicio3" name="servicios" value="almacenaje">
+        <label for="servicio3">Almacenaje</label><br><br>
+
+        <!-- Número de Proveedores Asociados -->
+        <label for="num_asociados">Número de Proveedores Asociados (1 a 50):</label><br>
+        <input type="number" id="num_asociados" name="num_asociados" min="1" max="50" required><br><br>
+
+        <!-- Subir Documentos -->
+        <label for="documentos">Subir Documentos de Identificación:</label><br>
+        <input type="file" id="documentos" name="documentos" multiple required><br><br>
+
+        <!-- Condiciones de Servicio -->
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">Acepto las condiciones de servicio</label><br><br>
+
+        <!-- Botón de Envío -->
+        <input type="submit" value="Registrar Proveedor">
+    </form>
+</body>
+</html>
